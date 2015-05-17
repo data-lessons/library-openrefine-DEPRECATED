@@ -1,4 +1,4 @@
-## Library Carpentry. Week Four: Open Refine.
+## Library Carpentry. Week Four: Open Refine
 
 ### Hour One
 
