@@ -26,4 +26,5 @@
   * combining data across OpenRefine projects
 * Applications of OpenRefine in your own work
 
-*Lesson based on Owen Stephens, [Working with Data Using OpenRefine](http://www.meanboyfriend.com/overdue_ideas/2014/11/working-with-data-using-openrefine/) ([Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/))*
+* Lesson based on Owen Stephens, [Working with Data Using OpenRefine](http://www.meanboyfriend.com/overdue_ideas/2014/11/working-with-data-using-openrefine/) ([Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/))
+* DOAJ article metadata licenced under [Creative Commons Attribution-ShareAlike License (CC BY-SA)](http://creativecommons.org/licenses/by-sa/4.0/)
