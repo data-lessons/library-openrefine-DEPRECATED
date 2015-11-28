@@ -3,12 +3,12 @@
 ###Exercise 1: Create your first Open Refine project (using provided data)
 There are several options for getting your data set into OpenRefine. You can upload or import files in a variety of formats including:
 
-TSV (tab-separated values)
-CSV (comma-separated values)
-Excel
-JSON (javascript object notation)
-XML
-Google Spreadsheet
+* TSV (tab-separated values)
+* CSV (comma-separated values)
+* Excel
+* JSON (javascript object notation)
+* XML
+* Google Spreadsheet
 
 To import the data for the exercises below, run OpenRefine and:
 
@@ -125,12 +125,27 @@ The list of values in the facet will update as you make edits.
 * Type 'EN' and click 'Apply'
 * See how the Language facet updates
 
-Using Clustering to find similar values
-Another function that is provided with facets is the 'Cluster' function. The Cluster function looks for similar values across the facet and enables you to merge together several facets to a single value.
+##Rows and Records
+OpenRefine has two modes of viewing data 'Rows' and 'Records'. So far we've been using the Rows mode, where each row represents a single "record" in the data set - in this case, an article. In Records mode, OpenRefine can link together multiple rows as belonging to the same Record.
+
+How this works can be seen in the next exercise...
+
+###Exercise 5: Split author names into separate cells
+If you look at the Author column you should be able to see that there are multiple names in each cell separated by the pipe symbol "|". To work with the author names effectively we need to split them into separate cells:
+* Click the dropdown menu at the top of the Author column
+* Choose Edit cells->Split multi-valued cells
+* In the prompt type the | symbol and click 'OK'
+    * Note that the rows are still numbered sequentially
+* Click the 'Records' option to change to Records mode
+    * Note how the numbering has changed - indicating that several rows are related to the same record
+
+##Clustering
+The Cluster function groups together values in a column that are 'similar' and enables you to merge together several different, but similar, values into a single value.
 
 This is very effective where you have data where there can be minor variations in data values that are likely such as names of people, organisations and places.
 
-To use the the 'Cluster' function, create a Facet on the relevant column and click the 'Cluster' button. This will bring up a new window where you can see the 'Clusters' that have been detected and work with them:
+To use the the 'Cluster' function, click on the 'Edit Cells' menu option in the relevant column and choose 'Cluster and edit...'
+
 The 'Clusters' are created automatically according to an algorithm. There are a number of different algorithms supported by OpenRefine - some experimentation maybe required to see which clustering algorithm works best with any particular set of data, and you may find that using different algorithms highlights different clusters.
 
 For more information on the methods used to create Clusters see https://github.com/OpenRefine/OpenRefine/wiki/Clustering-In-Depth
@@ -139,9 +154,7 @@ For each cluster you have the option of 'merging' the values together - that is 
 
 The Clustering function can also be accessed via the drop down menu at the top of a column by selecting "Edit cells" -> "Cluster and edit …"
 
-##
-
-Exercise 5: Use Clustering to clean up author data
-Create a Text Facet for the "Publisher" column
-Click 'Cluster'
-Using the 'key collision' method with the 'fingerprint' Keying Function work through the clusters of values, merging them to a single value where appropriate
+###Exercise 6: Use Clustering to clean up author data
+* Choose Edit cells->Cluster and edit from the author column (which should be split into indivdual values from the last exercise)
+* Using the 'key collision' method with the 'fingerprint' Keying Function work through the clusters of values, merging them to a single value where appropriate
+* Try using alternative clustering algorithms...
