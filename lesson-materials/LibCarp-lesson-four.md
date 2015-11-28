@@ -55,6 +55,15 @@ d) Lots and Lots
 
 ______
 ## Hour One
+* Slides: Introduction to OpenRefine
+* Basic OpenRefine function I
+    * Getting data into OpenRefine
+    * Navigating OpenRefine
+    * Working with columns
+    * Sorting data
+    * Facets and Filters
+    * Rows and Records
+    * Clustering
 
 ______
 ## Hour Two
