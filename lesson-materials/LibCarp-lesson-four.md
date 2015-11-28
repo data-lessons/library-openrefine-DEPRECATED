@@ -56,7 +56,7 @@ d) Lots and Lots
 ______
 ## Hour One
 * Slides: Introduction to OpenRefine
-* Basic OpenRefine function I
+* Basic OpenRefine functions I
     * Getting data into OpenRefine
     * Navigating OpenRefine
     * Working with columns
@@ -67,7 +67,12 @@ ______
 
 ______
 ## Hour Two
-
+* Basic OpenRefine functions II
+    * Transforming Data
+    * Undo and Redo
+    * Exporting Data
+    * Data Types
+    
 ______
 ## Hour Three
 
