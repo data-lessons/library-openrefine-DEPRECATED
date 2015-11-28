@@ -43,7 +43,7 @@ OpenRefine displays data in a tabular format. Each row will usually represent a 
 OpenRefine only displays a limited number of lines of data at one time. You can adjust the number choosing between 5, 10 (the default), 25 and 50.
 
 ###Reordering and renaming columns
-Many operations in OpenRefine are accessed from the drop down menus at the top of each column. You can re-order the columns by clicking the drop down menu at the top of the first column (labelled 'All'), and choosing 'Edit columns' -> 'Re-order / remove columns …'
+Many operations in OpenRefine are accessed from the drop down menus at the top of each column. You can re-order the columns by clicking the drop down menu at the top of the first column (labelled 'All'), and choosing 'Edit columns->Re-order / remove columns …'
 
 You can then drag and drop column names to re-order the columns, or remove columns completely if they are not required.
 
@@ -57,13 +57,13 @@ Unlike Excel 'Sorts' in OpenRefine are temporary - that is, if you remove the 'S
 You can sort on multiple columns at the same time by adding another sorted column (in the same way).
 
 ##Facets
-"Facets" are one of the most useful features of OpenRefine and can help both get an overview of the data in a project as well as helping you bring more consistency to the data.
+Facets are one of the most useful features of OpenRefine and can help both get an overview of the data in a project as well as helping you bring more consistency to the data.
 
 A 'Facet' groups all the values that appear in a column, and then allow you to filter the data by these values and edit values across many records at the same time.
 
 The simplest type of Facet is called a 'Text facet'. This simply groups all the text values in a column and lists each value with the number of records it appears in. The facet information always appears in the left hand panel in the OpenRefine interface.
 
-To create a Text Facet for a column, click on the drop down menu at the top of the column and choose Facet -> Text Facet. The facet will then appear in the left hand panel.
+To create a Text Facet for a column, click on the drop down menu at the top of the column and choose 'Facet -> Text Facet'. The facet will then appear in the left hand panel.
 
 The facet consists of a list of values used in the data. You can filter the data displayed by clicking on one of these headings.
 
@@ -117,7 +117,7 @@ This approach is useful in relatively small facets where you might have small va
 
 The list of values in the facet will update as you make edits.
 
-###Exercise 4: Correct the "Language" values via a facet
+###Exercise 4: Correct the Language values via a facet
 * Create a Text facet on the Language column
 * Notice that there is both 'EN' and 'English'
 * Put the mouse over the 'English' value
@@ -126,14 +126,14 @@ The list of values in the facet will update as you make edits.
 * See how the Language facet updates
 
 ##Rows and Records
-OpenRefine has two modes of viewing data 'Rows' and 'Records'. So far we've been using the Rows mode, where each row represents a single "record" in the data set - in this case, an article. In Records mode, OpenRefine can link together multiple rows as belonging to the same Record.
+OpenRefine has two modes of viewing data 'Rows' and 'Records'. So far we've been using the Rows mode, where each row represents a single record in the data set - in this case, an article. In Records mode, OpenRefine can link together multiple rows as belonging to the same Record.
 
 How this works can be seen in the next exercise...
 
 ###Exercise 5: Split author names into separate cells
 If you look at the Author column you should be able to see that there are multiple names in each cell separated by the pipe symbol "|". To work with the author names effectively we need to split them into separate cells:
 * Click the dropdown menu at the top of the Author column
-* Choose Edit cells->Split multi-valued cells
+* Choose 'Edit cells->Split multi-valued cells'
 * In the prompt type the | symbol and click 'OK'
     * Note that the rows are still numbered sequentially
 * Click the 'Records' option to change to Records mode
@@ -152,9 +152,9 @@ For more information on the methods used to create Clusters see https://github.c
 
 For each cluster you have the option of 'merging' the values together - that is replace with a single consistent value. By default OpenRefine uses the most common value in the cluster as the new value, but you can select one of the other values by clicking the value itself, or you can simply type the desired value into the 'New Cell Value' box.
 
-The Clustering function can also be accessed via the drop down menu at the top of a column by selecting "Edit cells" -> "Cluster and edit …"
+The Clustering function can also be accessed via the drop down menu at the top of a column by selecting 'Edit cells->Cluster and edit …'
 
 ###Exercise 6: Use Clustering to clean up author data
-* Choose Edit cells->Cluster and edit from the author column (which should be split into indivdual values from the last exercise)
+* Choose 'Edit cells->Cluster and edit' from the author column (which should be split into indivdual values from the last exercise)
 * Using the 'key collision' method with the 'fingerprint' Keying Function work through the clusters of values, merging them to a single value where appropriate
 * Try using alternative clustering algorithms...
