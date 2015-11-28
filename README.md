@@ -12,6 +12,8 @@
   * The OpenRefine interface
   * Sorting data
   * Facets and Filters
+  * Rows and Records
+  * Clustering
 
 ### Hour Two
 * Basic OpenRefine functions II
