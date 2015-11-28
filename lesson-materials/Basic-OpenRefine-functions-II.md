@@ -20,10 +20,10 @@ Examples of some of these common transformations are given in the table below, w
 
 Common Transformation  | Action | GREL expression
 --------------------| ------------- | -------------
-To Uppercase| Converts the current value to uppercase | value.toUppercase()
-To Lowercase| Converts the current value to lowercase | value.toLowercase()
-To Titlecase| Converts the current value to titlecase (i.e. each word starts with an uppercase character and all other characters are converted to lowercase) | value.toTitlecase()
-Trim leading and trailing whitespace | Removes any ‘whitespace’ characters (e.g. spaces, tabs) from the start or end of the current value | value.trim()
+To Uppercase| Converts the current value to uppercase | ```value.toUppercase()```
+To Lowercase| Converts the current value to lowercase | ```value.toLowercase()```
+To Titlecase| Converts the current value to titlecase (i.e. each word starts with an uppercase character and all other characters are converted to lowercase) | ```value.toTitlecase()```
+Trim leading and trailing whitespace | Removes any 'whitespace' characters (e.g. spaces, tabs) from the start or end of the current value | ```value.trim()```
 
 ###Exercise 7: Correct Publisher data
 * Create a text facet on the Publisher column
@@ -55,36 +55,36 @@ Next to the 'Preview' option are options to view:
 * See that the Titles for these are all in uppercase
 * Click the dropdown menu on the Title column
 * Choose 'Edit cells->Transform...'
-* In the Expression box type 'value.toTitlecase()'
+* In the Expression box type ```value.toTitlecase()```
 * In the Preview note that you can see what the affect of running this will be
 * Click 'OK'
 
 ##Undo and Redo
-OpenRefine lets you undo, and redo, any number of steps you have taken in cleaning the data. This means you can always try out transformations and ‘undo’ if you need to. The way OpenRefine records the steps you have taken even allows you to take the steps you’ve carried out on one data set, and apply it to another data set by a simple copy and paste operation.
+OpenRefine lets you undo, and redo, any number of steps you have taken in cleaning the data. This means you can always try out transformations and 'undo' if you need to. The way OpenRefine records the steps you have taken even allows you to take the steps you've carried out on one data set, and apply it to another data set by a simple copy and paste operation.
 
-The ‘Undo’ and ‘Redo’ options are accessed via the lefthand panel.
+The 'Undo' and 'Redo' options are accessed via the lefthand panel.
 
-The Undo/Redo panel lists all the steps you’ve taken so far. To undo steps, simply click on the last step you want to preserve in the list and this will automatically undo all the changes made since that step.
+The Undo/Redo panel lists all the steps you've taken so far. To undo steps, simply click on the last step you want to preserve in the list and this will automatically undo all the changes made since that step.
 
 The remaining steps will continue to show in the list but greyed out, and you can reapply them by simply clicking on the last step you want to apply.
 
-However, if you ‘undo’ a set of steps and then start doing new transformations, the greyed out steps will disappear and you will no longer have the option to ‘redo’ these steps.
+However, if you 'undo' a set of steps and then start doing new transformations, the greyed out steps will disappear and you will no longer have the option to 'redo' these steps.
 
-If you wish to save a set of steps to be re-applied later, or to a different project, you can click the ‘Extract’ button. This gives you the option to select the steps you want to save, and to copy the transformations included in the selected steps in a format called ‘JSON’
+If you wish to save a set of steps to be re-applied later, or to a different project, you can click the 'Extract' button. This gives you the option to select the steps you want to save, and to copy the transformations included in the selected steps in a format called 'JSON'
 
-To apply a set of steps you have copied or saved in this ‘JSON’ format use the ‘Apply’ button and paste in the JSON. In this way you can share transformations between projects and each other.
+To apply a set of steps you have copied or saved in this 'JSON' format use the 'Apply' button and paste in the JSON. In this way you can share transformations between projects and each other.
 
 Undo/Redo data is stored with the Project and is saved automatically as you work, so next time you open the project, you can access your full history of steps you have carried out and undo/redo in exactly the same way.
 
 ##Exporting data
-Once you have finished working with a data set in OpenRefine you may wish to export it. The export options are accessed through the ‘Export’ button at the top right of the OpenRefine interface
+Once you have finished working with a data set in OpenRefine you may wish to export it. The export options are accessed through the 'Export' button at the top right of the OpenRefine interface
 Export formats support include HTML, Excel and comma- and tab-separated value (csv and tsv). You can also write a custom export, selecting to export specific fields, adding a header or footer and specifying the exact format.
 
 ##Data types and Regular Expressions
 Understanding data types and regular expressions will help you write more complex transformations using GREL.
 
 Data types in OpenRefine
-Every piece of data in OpenRefine is has a ‘type’. The most common ‘type’ is a ‘string’ - that is a piece of text. However there are other data types available and transformations let you convert data from one type to another where appropriate. The data types supported are:
+Every piece of data in OpenRefine is has a 'type'. The most common 'type' is a 'string' - that is a piece of text. However there are other data types available and transformations let you convert data from one type to another where appropriate. The data types supported are:
 
 * String
 * Number
@@ -92,64 +92,88 @@ Every piece of data in OpenRefine is has a ‘type’. The most common ‘type�
 * Boolean
 * Array
 
-So far we've been looking only at 'String' type data. Much of the time it is possible to treat numbers and dates as strings. For example in the Date column we have the date of publication represented as a String. However, some operations and transformations only work on 'number' or 'date' type operations. The simplest example is sorting values in numeric or date order. To carry out these functions we need to convert the values to a date first.
+###Dates and Numbers
+So far we've been looking only at 'String' type data. Much of the time it is possible to treat numbers and dates as strings. For example in the Date column we have the date of publication represented as a String. However, some operations and transformations only work on 'number' or 'date' type operations. The simplest example is sorting values in numeric or date order. To carry out these functions we need to convert the values to a date or number first.
 
-###Exercise 8: Reformat the Date
+###Exercise 9: Reformat the Date
 * Make sure you remove all Facets and Filters
 * On the Date column use the dropdown menu to select 'Edit cells->Common transforms->To date'
-* Note how the values are in a standard date format (ISO8601) are now displayed in green - this indicates they are stored as dates
+* Note how the values are now displayed in green and follow a standard convention for their display format (ISO8601) - this indicates they are now stored as date data types in OpenRefine. We can now carry out functions that are specific to Dates
+* On the Date column dropdown select 'Edit column->Add column based on this column'. Using this function you can create a new column, while preserving the old column
+* In the 'New column name' type "Formatted Date"
+* In the 'Expression' box type the GREL expression ```value.toString("dd MMMM yyyy")```
 
-A ‘Boolean’ is a binary value that can either be ‘true’ or ‘false’. Boolean values can be used directly in OpenRefine cell, but is more often used in transformations as part of a GREL expression. For example:
+###Booleans and Arrays
+####Booleans
+Booleans and Arrays are data types that are more often used while manipulating data in a GREL expression than for actually storing in a cell (in fact, Arrays cannot be stored in a cell in OpenRefine).
 
-value.contains(“test")
+A 'Boolean' is a binary value that can either be 'true' or 'false'. Boolean values can be used directly in OpenRefine cell, but is more often used in transformations as part of a GREL expression. For example the GREL expression 
+```
+value.contains("test")
+```
+generates a boolean value of either 'true' or 'false' depending on whether the current value in the cell contains the text 'test' anywhere. 
 
-Generates a boolean value of either ‘true’ or ‘false’ depending on whether the current value in the cell contains the text ‘test’ anywhere. Such tests can be combined with other GREL expressions to create more complex transformations.
+Such tests can be combined with other GREL expressions to create more complex transformations. For example, to carry out a further transformation only if a test is successful. The GREL transformation ```if(value.contains("test"),"Test data",value)``` replaces a cell value with the words "Test data" only *if* the value in the cell contains the string "test" anywhere.
 
-An ‘Array’ is a list of values, represented in Refine by the use of square brackets containing a list of values surrounded by inverted commas and separated by commas. For example an array listing the days of the week would look like:
-[“Monday”,”Tuesday”,”Wednesday”,”Thursday”,”Friday”,”Saturday”,”Sunday”]
+####Arrays
+An 'Array' is a list of values, represented in Refine by the use of square brackets containing a list of values surrounded by inverted commas and separated by commas. For example an array listing the days of the week would look like:
 
-Arrays can be sorted, de-duplicated, and manipulated in other ways in GREL expressions, but cannot appear directly in an OpenRefine cell. Arrays in OpenRefine are usually the result of a transformation. For example the ‘split’ function takes a string, and changes it into an array based on a ‘separator’. For example if a cell has the value:
+["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
 
-“Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday”
+Arrays can be sorted, de-duplicated, and manipulated in other ways in GREL expressions, but cannot appear directly in an OpenRefine cell. Arrays in OpenRefine are usually the result of a transformation. For example the 'split' function takes a string, and changes it into an array based on a 'separator'. For example if a cell has the value:
 
-This can be transformed into an array using the ‘split’ function:
+"Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday"
 
-value.split(“,”)
-
+This can be transformed into an array using the 'split' function
+```
+value.split(",")
+```
 This would create the array containing the days of the week:
 
-[“Monday”,”Tuesday”,”Wednesday”,”Thursday”,”Friday”,”Saturday”,”Sunday”]
+["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
 
-This can be combined with array operations like ‘sort’. For example, assuming the cell contains the same value as above, then the function:
+This can be combined with array operations like 'sort'. For example, assuming the cell contains the same value as above, then the function
+```
+value.split(",").sort()
+```
+would result in an array containing the days of the week sorted in alphabetical order:
 
-value.split(“,”).sort()
+["Friday","Monday","Saturday","Sunday","Thursday","Tuesday","Wednesday"]
 
+To output a value from an array you can either select a specific value depending on its position in the list (with the first position treated as 'zero'). For example
+```
+value.split(",")[0]
+```
+would extract the first value from the array created by the 'split' function. In the above example this would be "Monday"
 
-Would result in an array containing the days of the week sorted in alphabetical order:
+You can also join arrays together to make a 'String'. The GREL expression would look like
+```
+value.split(",").sort().join(",")
+```
+. Taking the above example again, this would result in a string with the days of the week in alphabetical order, listed with commas between each day.
 
-[“Friday”,“Monday”,”Saturday”,”Sunday”,”Thursday”,”Tuesday”,”Wednesday”]
+###Exercise 10: Reverse author names
+In this exercise we are going to use both the Boolean and Array data types.
+If you look at the author column, you can see that most of the author names are written in the natural order. However, a few have been reversed to put the family name first.
 
-To output a value from an array you can either select a specific value depending on its position in the list (with the first position treated as ‘zero’). For example:
+We can do a crude test for reversed author names by looking for those that contain a comma:
 
-value.split(“,”)[0]
+* Make sure you have already split the author names into individual cells using 'Edit cells->Split multi-valued cells' (you should have done this in exercise 5)
+* On the author column, use the dropdown menu and select 'Facet->Custom text facet...'
+	* The Custom text facet function allows you to write GREL functions to create a facet
+* In the Expression box type ```value.contains(",")```
+* Click 'OK'
+* Since the 'contains' function outputs a Boolean value, you should see a facet that contains 'false' and 'true'. These represent the outcome of the expression, i.e. true = values containing a comma; false = values not containing a comma
+* In this facet select 'true' to narrow down to the author names that contain a comma
 
-Would extract the first value from the array created by the ‘split’ function. In the above example this would be “Monday”
+Now we have narrowed down to the lines with a comma in a name, we can use the 'match' function. The match function allows you to use regular expressions, and output the capture groups as an array, which you can then manipulate.
 
-You can also join arrays together to make a ‘String’. The GREL expression would look like:
+* On the author column use the dropdown menu and select 'Edit cells->Transform'
+* In the Expression box type ```value.match(/(.*),(.*)/)```
+* See how this creates an array with two members in each row in the Preview column
 
-value.split(“,”).sort().join(“,”)
+To get the author name in the natural order you can reverse the array and join it back together with a space to create the string you need:
 
-Taking the above example again, this would result in a string with the days of the week in alphabetical order, listed with commas between each day.
-
-###Exercise 9: Convert Date column to Date
-
-* Demonstrate basic GREL
-    * e.g. ???
-* Match function
-    * reorder reversed names in Author col
-    * value.match(/(.*),(.*)/)[1] + " " + value.match(/(.*),(.*)/)[0]
-
-* Undo/Redo
-
-* Split and filter on Subject Col?
-...
+* In the Expression box, add to the existing expression until it reads ```value.match(/(.*),(.*)/).reverse().join(" ")```
+* In the Preview view you should be able see this has reversed the array, and joined it back into a string
+* Click 'OK'
