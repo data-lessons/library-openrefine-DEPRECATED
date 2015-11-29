@@ -87,3 +87,13 @@ ______
     * {Trainer}: Comment verbally on questions and show relevant OpenRefine functionality if time allows 
     * {Trainer}: Set take-away for participants to add to the issues list and comment on the issues already posted
 
+______
+### Going further
+* [Getting started with OpenRefine by Thomas Padilla](http://thomaspadilla.org/dataprep/)
+* [Cleaning Data with OpenRefine by Seth van Hooland, Ruben Verborgh and Max De Wilde](http://programminghistorian.org/lessons/cleaning-data-with-openrefine)
+* [Blog posts on using OpenRefine from Owen Stephens](http://www.meanboyfriend.com/overdue_ideas/tag/openrefine/?orderby=date&order=ASC)
+* [Identifying potential headings for Authority work using III Sierra, MS Excel and OpenRefine](http://epublications.marquette.edu/lib_fac/81/)
+* [Free your metadata website](http://freeyourmetadata.org)
+* [Data Munging Tools in Preparation for RDF: Catmandu and LODRefine by Christina Harlow](http://journal.code4lib.org/articles/11013)
+* [Walkthrough of Geonames Recon Service by Christina Harlow](http://christinaharlow.com/walkthrough-of-geonames-recon-service/)
+* [OpenRefine News (monthly round up of new blog posts, tutorials and other information)](http://openrefine.org/blog.html)
