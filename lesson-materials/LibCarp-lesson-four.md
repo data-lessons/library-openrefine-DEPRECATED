@@ -48,15 +48,15 @@ Conducted as attendees enter the room
 
 Thinking about this session on OpenRefine, please rate your skill level. How much would you say that you know about OpenRefine:
 
-a) Nothing
-b) A Little
-c) Lots
-d) Lots and Lots
+* a) Nothing
+* b) A Little
+* c) Lots
+* d) Lots and Lots
 
 ______
 ## Hour One
 * Slides: Introduction to OpenRefine
-* Basic OpenRefine functions I
+* [Basic OpenRefine functions I](Basic-OpenRefine-functions-I.md)
     * Getting data into OpenRefine
     * Navigating OpenRefine
     * Working with columns
@@ -72,7 +72,12 @@ ______
     * Undo and Redo
     * Exporting Data
     * Data Types
-    
-______
-## Hour Three
 
+______
+### Hour Three
+* Advanced OpenRefine functions
+  * Looking up data from a URL
+  * Reconciliation services
+  * Extensions
+  * Looking up data from other OpenRefine projects
+* Applications of OpenRefine in your own work

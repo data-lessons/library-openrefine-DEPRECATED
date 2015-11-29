@@ -24,8 +24,10 @@
 
 ### Hour Three
 * Advanced OpenRefine functions
-  * using OpenRefine to enhance data from external sources
-  * combining data across OpenRefine projects
+  * Looking up data from a URL
+  * Reconciliation services
+  * Extensions
+  * Looking up data from other OpenRefine projects
 * Applications of OpenRefine in your own work
 
 * Lesson based on Owen Stephens, [Working with Data Using OpenRefine](http://www.meanboyfriend.com/overdue_ideas/2014/11/working-with-data-using-openrefine/) ([Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/))
