@@ -67,7 +67,7 @@ ______
 
 ______
 ## Hour Two
-* Basic OpenRefine functions II
+* [Basic OpenRefine functions II](Basic-OpenRefine-functions-II.md)
     * Transforming Data
     * Undo and Redo
     * Exporting Data
@@ -75,7 +75,7 @@ ______
 
 ______
 ### Hour Three
-* Advanced OpenRefine functions
+* [Advanced OpenRefine functions](Advanced-OpenRefine-functions.md)
   * Looking up data from a URL
   * Reconciliation services
   * Extensions
