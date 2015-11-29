@@ -3,7 +3,8 @@
 ###Install for week four
 * As in weeks two and three we will want to use a laptop during this session.
 * Though it isn't completely necessary, it would be helpful to refresh your knowledge of regular expressions from week 1
-_______
+
+______
 ## Hour One
 * Slides: Introduction to OpenRefine
 * Basic OpenRefine functions I
