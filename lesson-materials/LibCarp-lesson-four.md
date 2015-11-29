@@ -81,3 +81,9 @@ ______
   * Extensions
   * Looking up data from other OpenRefine projects
 * Applications of OpenRefine in your own work
+    * Working in a group identify one or more potential uses of OpenRefine in your work (5 minutes)
+    * Develop a list of questions you have about the use of OpenRefine in these scenarios (5 minutes)
+    * Add questions as [Issues on the Github Repository](https://github.com/LibraryCarpentry/week-four-library-carpentry/issues)
+    * {Trainer}: Comment verbally on questions and show relevant OpenRefine functionality if time allows 
+    * {Trainer}: Set take-away for participants to add to the issues list and comment on the issues already posted
+
