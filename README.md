@@ -5,22 +5,22 @@
 * Though it isn't completely necessary, it would be helpful to refresh your knowledge of regular expressions from week 1
 
 ### Hour One
-* Introduction to OpenRefine
-  * What is OpenRefine and how can it help you
+* Slides: Introduction to OpenRefine
 * Basic OpenRefine functions I
-  * Importing data
-  * The OpenRefine interface
-  * Sorting data
-  * Facets and Filters
-  * Rows and Records
-  * Clustering
+    * Getting data into OpenRefine
+    * Navigating OpenRefine
+    * Working with columns
+    * Sorting data
+    * Facets and Filters
+    * Rows and Records
+    * Clustering
 
 ### Hour Two
 * Basic OpenRefine functions II
-  * Transforming data
-  * Undo/Redo
-* OpenRefine data types
-* Using regular expressions in OpenRefine
+    * Transforming Data
+    * Undo and Redo
+    * Exporting Data
+    * Data Types
 
 ### Hour Three
 * Advanced OpenRefine functions
