@@ -11,4 +11,4 @@ Note:
 - if you don't think you'd be able to, tell us!
 - no names required
 
-Responses (with names offered voluntarily removed) at [LibCarp-closing-feedback.txt](???)
+Responses (with names offered voluntarily removed) at [LibCarp-closing-feedback.txt](https://github.com/LibraryCarpentry/week-four-library-carpentry/blob/master/LibCarp-closing-feedback.txt)
