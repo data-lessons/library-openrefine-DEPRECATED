@@ -12,19 +12,19 @@ There are several options for getting your data set into OpenRefine. You can upl
 
 To import the data for the exercises below, run OpenRefine and:
 
-Click 'Create Project'
-Choose 'Get Data from this Computer'
-Click 'Choose Files'
-Locate the file called 'doaj-article-sample.csv' (this can be downloaded from https://github.com/LibraryCarpentry/week-four-library-carpentry/raw/master/libcarp-wk4-data/doaj-article-sample.csv)
-Click 'Next'
+* Click 'Create Project'
+* Choose 'Get Data from this Computer'
+* Click 'Choose Files'
+* Locate the file called 'doaj-article-sample.csv' (this can be downloaded from https://github.com/LibraryCarpentry/week-four-library-carpentry/raw/master/libcarp-wk4-data/doaj-article-sample.csv)
+* Click 'Next'
 
 The next screen gives you some options to ensure that the data gets imported into OpenRefine correctly. The options vary depending on the type of data you are importing.
 
 In this case you need to:
 
-Set the 'Character encoding' to 'UTF-8'
-Ensure the first row is used to create the column headings
-Make sure OpenRefine doesn't try to automatically detect numbers and dates
+* Set the 'Character encoding' to 'UTF-8'
+* Ensure the first row is used to create the column headings
+* Make sure OpenRefine doesn't try to automatically detect numbers and dates
 
 Once you are happy click 'Create Project >>'
 
@@ -72,9 +72,9 @@ You can include multiple values from the facet in a filter at one time by using 
 You can also 'invert' the filter to show all records which do not match your selected values. This option appears at the top of the Facet panel when you select a value from the facet to apply as a filter.
 
 ###Exercise 2: Which licences are used for articles in this file?
-Create a facet for the 'Licence' column
-What is the most common Licence in the file?
-How many articles in the file don't have a licence assigned?
+* Create a facet for the 'Licence' column
+* What is the most common Licence in the file?
+* How many articles in the file don't have a licence assigned?
 
 ##Filters
 As well as using Facets to filter the data displayed in OpenRefine you can also apply 'Text Filters' which looks for a particular piece of text appearing in a column. Text filters are applied by clicking the drop down menu at the top of the column you want to apply the filter to and choosing 'Text filter'.
