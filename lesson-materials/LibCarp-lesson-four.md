@@ -6,7 +6,7 @@ _____
 ##Lesson Plan
 
 ###Pre-requisites
-This lesson will include the use of regular expressions which were covered in '[Week One: Basics](https://github.com/LibraryCarpentry/week-one-library-carpentry)'. However, there are no pre-requisites in terms of skills or knowledge required to complete this lesson.
+This lesson will include the use of regular expressions which were covered in '[Library Carpentry Week One: Introduction to Data](https://github.com/data-lessons/library-data-intro/blob/master/lesson-materials/LibCarp-introtodata.md)'. However, there are no pre-requisites in terms of skills or knowledge required to complete this lesson.
 
 _____
 ### Installation (to be completed before the session)
@@ -24,7 +24,7 @@ There are versions for Windows, Mac OS X and Linux.
 ####Installing and Running OpenRefine
 When you download OpenRefine for Windows or Linux from the address above, you are downloading a zip file. To install OpenRefine you simply unzip the downloaded file wherever you want to install the program. This can be to a personal directory or to an applications or software directory - OpenRefine should run wherever you put the unzipped folder. The location has to be a "local" drive as problems have been reported trying to run OpenRefine from a Network drive.
 
-If you are downloading OpenRefine for Mac, you a re downloading a ‘dmg’ (disk image) file which you can open, and then drag the OpenRefine application to an appropriate folder on you computer.
+If you are downloading OpenRefine for Mac, you a re downloading a ‘dmg’ (disk image) file which you can open, and then drag the OpenRefine application to an appropriate folder on your computer.
 
 OpenRefine is a java application, and you need to have a ‘java runtime environment’ (JRE) installed on your computer to run OpenRefine. If you don’t already have one installed then you can download and install from http://java.com by going to the site and clicking ‘Free Java Download’.
 
@@ -83,7 +83,7 @@ ______
 * Applications of OpenRefine in your own work
     * Working in a group identify one or more potential uses of OpenRefine in your work (5 minutes)
     * Develop a list of questions you have about the use of OpenRefine in these scenarios (5 minutes)
-    * Add questions as [Issues on the Github Repository](https://github.com/LibraryCarpentry/week-four-library-carpentry/issues)
+    * Add questions as [Issues on the Github Repository](https://github.com/data-lessons/library-openrefine/issues)
     * {Trainer}: Comment verbally on questions and show relevant OpenRefine functionality if time allows 
     * {Trainer}: Set take-away for participants to add to the issues list and comment on the issues already posted
 
@@ -95,5 +95,5 @@ ______
 * [Identifying potential headings for Authority work using III Sierra, MS Excel and OpenRefine](http://epublications.marquette.edu/lib_fac/81/)
 * [Free your metadata website](http://freeyourmetadata.org)
 * [Data Munging Tools in Preparation for RDF: Catmandu and LODRefine by Christina Harlow](http://journal.code4lib.org/articles/11013)
-* [Walkthrough of Geonames Recon Service by Christina Harlow](http://christinaharlow.com/walkthrough-of-geonames-recon-service/)
+* [Walkthrough of Geonames Recon Service by Christina Harlow](http://christinaharlow.com/walkthrough-of-geonames-recon-service)
 * [OpenRefine News (monthly round up of new blog posts, tutorials and other information)](http://openrefine.org/blog.html)
