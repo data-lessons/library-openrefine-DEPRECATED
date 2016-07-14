@@ -1,3 +1,5 @@
+**NOTE: the master branch is now depreciated. The [gh-pages branch](https://github.com/data-lessons/library-openrefine/tree/gh-pages) is the default branch for this repo**
+
 ## Library Carpentry. Open Refine
 
 This lesson is based on Week 4 Library Carpentry by James Baker.  
