@@ -1,3 +1,8 @@
+
+This materila has now been moved to the Library Carpentry organisation.
+
+Find it here: https://github.com/LibraryCarpentry/lc-open-refine
+
 # Library Carpentry
 
 The Library Carpentry module '[OpenRefine Lessons for Librarians](http://data-lessons.github.io/library-openrefine/)' is maintained by [Owen Stephens](https://github.com/ostephens), [Juliane Schneider](https://github.com/pitviper6), and [Carmi Cronje](https://github.com/ccronje).
